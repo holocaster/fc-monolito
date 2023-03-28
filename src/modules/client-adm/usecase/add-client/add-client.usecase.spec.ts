@@ -15,7 +15,13 @@ describe("Add Client Usecase unit test", () => {
     const input = {
       name: "Client 1",
       email: "x@x.com",
-      address: "Address 1",
+      document: "adfsdff",
+      street: "street",
+      number: "number",
+      complement: "4322",
+      city: "city",
+      state: "state",
+      zipCode: "zipCode"
     };
 
     const result = await usecase.execute(input);
@@ -24,6 +30,6 @@ describe("Add Client Usecase unit test", () => {
     expect(result.id).toBeDefined();
     expect(result.name).toEqual(input.name);
     expect(result.email).toEqual(input.email);
-    expect(result.address).toEqual(input.address);
+    expect(result.street).toEqual(input.street);
   });
 });
