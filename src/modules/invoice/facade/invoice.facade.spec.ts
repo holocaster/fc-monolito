@@ -1,6 +1,6 @@
 import { InvoiceModel } from './../repository/invoice.model';
 import { Sequelize } from "sequelize-typescript";
-import { ProductInvoiceModel } from '../repository/procut-invoice.model';
+import { ProductInvoiceModel } from '../repository/product-invoice.model';
 import InvoiceRepository from '../repository/invoice.repository';
 import GenerateInvoiceUseCase from '../usecase/generate-invoice/generate-invoice.usecase';
 import InvoiceFacade from './invoice.facade';

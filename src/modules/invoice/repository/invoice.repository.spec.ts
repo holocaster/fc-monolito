@@ -4,7 +4,7 @@ import Id from "../../@shared/domain/value-object/id.value-object";
 import InvoiceEntity from "../domain/entity/invoce.entity";
 import ProductEntity from "../domain/entity/product.entity";
 import Address from "../domain/value-object/address";
-import { ProductInvoiceModel } from './procut-invoice.model';
+import { ProductInvoiceModel } from './product-invoice.model';
 import InvoiceRepository from './invoice.repository';
 
 const productOne = new ProductEntity({

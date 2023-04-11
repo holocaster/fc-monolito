@@ -1,5 +1,5 @@
 import { Column, HasMany, Model, PrimaryKey, Table } from "sequelize-typescript";
-import { ProductInvoiceModel } from "./procut-invoice.model";
+import { ProductInvoiceModel } from "./product-invoice.model";
 
 @Table({
     tableName: "invoices",

@@ -1,9 +1,19 @@
 import Id from "../../@shared/domain/value-object/id.value-object";
 import Product from "../domain/product.entity";
 import ProductGateway from "../gateway/product.gateway";
+import CatalogModel from "./product.model";
 import ProductModel from "./product.model";
 
 export default class ProductRepository implements ProductGateway {
+
+    async add(entity: Product): Promise<void> {
+        await CatalogModel.create({
+            id: entity.id.id,
+            name: entity.name,
+            description: entity.description,
+            salesPrice: entity.salesPrice
+        });
+    }
 
     async findAll(): Promise<Product[]> {
         const products = await ProductModel.findAll();

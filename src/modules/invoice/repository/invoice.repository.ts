@@ -1,4 +1,4 @@
-import { ProductInvoiceModel } from './procut-invoice.model';
+import { ProductInvoiceModel } from './product-invoice.model';
 import { InvoiceModel } from './invoice.model';
 import InvoiceEntity from "../domain/entity/invoce.entity";
 import InvoiceGateway from "../gateway/invoice.gateway";
