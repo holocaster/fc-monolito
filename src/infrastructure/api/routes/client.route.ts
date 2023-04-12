@@ -27,9 +27,9 @@ clientRoute.post("/", async (req: Request, res: Response) => {
 
 clientRoute.get("/:id", async (req: Request, res: Response) => {
     const clientadmFace = ClientAdmFacadeFactory.create();
-    const output = await clientadmFace.find({id: req.params.id});
-  
+    const output = await clientadmFace.find({ id: req.params.id });
+
     res.format({
-      json: async () => res.send(output)
+        json: async () => res.send(output)
     });
-  });
+});
